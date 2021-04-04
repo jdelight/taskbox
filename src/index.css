@@ -1,3 +1,4 @@
+@import "tokens.css";
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -351,7 +352,7 @@
    height: 0.85em;
    transform: translate3d(-50%, -50%, 0);
    background: transparent;
-   box-shadow: #2cc5d2 0 0 0 1px inset;
+   box-shadow: var(--ui-color-highlight) 0 0 0 1px inset;
    content: '';
    display: block;
  }
@@ -359,7 +360,7 @@
    font-size: 16px;
    line-height: 24px;
    box-shadow: none;
-   color: #2cc5d2;
+   color: var(--ui-color-highlight);
    margin-top: -1px;
    font-family: 'percolate';
    speak: none;
@@ -392,7 +393,7 @@
  }
  .input-symbol input:focus + [class^="icon-"],
  .input-symbol input:focus + [class*=" icon-"] {
-   color: #2cc5d2;
+   color: var(--ui-color-highlight);
  }
  .input-symbol [class^="icon-"],
  .input-symbol [class*=" icon-"] {
@@ -883,7 +884,7 @@
    color: #eee;
  }
  .list-item .actions a:hover {
-   color: #2cc5d2;
+   color: var(--ui-color-highlight);
  }
  .list-item .actions a:active {
    color: #555;
@@ -895,7 +896,7 @@
    text-align: center;
  }
  .list-item.TASK_PINNED .icon-star {
-   color: #2cc5d2;
+   color: var(--ui-color-highlight);
  }
  .list-item.TASK_ARCHIVED input[type="text"] {
    color: #aaa;
@@ -965,7 +966,7 @@
  .wrapper-message [class*=" icon-"] {
    font-size: 48px;
    line-height: 56px;
-   color: #2cc5d2;
+   color: var(--ui-color-highlight);
    display: block;
  }
  .wrapper-message .title-message {
