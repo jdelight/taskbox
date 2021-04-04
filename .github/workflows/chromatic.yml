@@ -1,0 +1,15 @@
+  name: 'Chromatic Deployment'
+
+  on: push
+
+  jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - run: yarn
+        - uses: chromaui/action@v1
+          with:
+            projectToken: 106a05ca964e
+            token: ${{ secrets.GITHUB_TOKEN }}
+
